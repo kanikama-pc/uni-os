@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uni-os - top page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="os-logo">
+                <a href="index.html"><img src="os-logo.png" alt="uni-osロゴ"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="install/install-ja.html">インストール</a></li>
+                    <li><a href="#news">お知らせ</a></li>
+                    <li><a href="https://github.com/kanikama-pc/uni-builder" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <label for="language">Language: </label>
+                <select id="language" onchange="changeLanguage()">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="intro">
+            <img src="screenshot.png" alt="uni-osスクリーンショット" class="intro-image">
+            <div class="intro-text">
+                <h1>uni-osとは？</h1>
+                <ul>
+                    <li>uni-osは、環境に優しい、無料のオープンソースオペレーティングシステムです。</li>
+                    <li>uni-osは、古いハードウェアのサポートを切り捨てません。</li>
+                    <li>低消費電力でバッテリーや熱に弱い部品の劣化が抑えられ、デバイスの長寿命化に貢献します。</li>
+                    <li>操作に迷わない、直感的なインタフェースを備えています。</li>
+                    <li>独自開発のデスクトップ環境 "uni desktop" を採用し、美しい外観と軽快さを両立しました。</li>
+                </ul>
+            </div>
+        </section>
+        <section class="requirements">
+            <h2>最低動作要件</h2>
+            <ul>
+                <li>CPU: デュアルコア以上</li>
+                <li>RAM: 2GB以上</li>
+                <li>ディスク容量: 20GB以上</li>
+            </ul>
+        </section>
+        <section class="install-prompt">
+            <h2>インストール方法はこちら</h2>
+            <p>あなたの愛機を甦らせましょう！</p>
+            <a href="install/install-ja.html" class="install-button">インストール</a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>uni-os &copy; 2024. All rights reserved.</p>
+            <div class="social-links">
+                <a href="" target="_blank">X(Twitter)</a>
+                <a href="" target="_blank">Instagram</a>
+                <a href="" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById("language").value;
+            if (language === "en") {
+                window.location.href = "en.html"; // 英語版ページにリダイレクト
+            } else {
+                window.location.href = "ja.html"; // 日本語版ページにリダイレクト
+            }
+        }
+    </script>
+</body>
+</html>

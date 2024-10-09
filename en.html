@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uni-os - top page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="os-logo">
+                <a href="index.html"><img src="os-logo.png" alt="uni-os logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="install/install-en.html">Install</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="https://github.com/kanikama-pc/uni-builder" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <label for="language">Language: </label>
+                <select id="language" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="ja">Japanese</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="intro">
+            <img src="screenshot.png" alt="uni-os screenshot" class="intro-image">
+            <div class="intro-text">
+                <h1>What is uni-os?</h1>
+                <ul>
+                    <li>uni-os is an environmentally friendly, free, open source operating system.</li>
+                    <li>uni-os does not cut support for older hardware.</li>
+                    <li>Low power consumption suppresses deterioration of batteries and heat-sensitive components, contributing to longer device life.</li>
+                    <li>It has an intuitive interface that makes it easy to operate.</li>
+                    <li>Adopting the uniquely developed desktop environment "uni desktop", it has both a beautiful appearance and lightness.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="requirements">
+            <h2>Minimum operating requirements</h2>
+            <ul>
+                <li>CPU: Dual core or higher</li>
+                <li>RAM: 2GB or more</li>
+                <li>Disk capacity: 20GB or more</li>
+            </ul>
+        </section>
+        <section class="install-prompt">
+            <h2>Click here for installation instructions</h2>
+            <p>Let's revive your favorite machine!</p>
+            <a href="install/install-en.html" class="install-button">Install</a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>uni-os &copy; 2024. All rights reserved.</p>
+            <div class="social-links">
+                <a href="" target="_blank">X(Twitter)</a>
+                <a href="" target="_blank">Instagram</a>
+                <a href="" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById("language").value;
+            if (language === "en") {
+                window.location.href = "en.html";
+            } else {
+                window.location.href = "ja.html";
+            }
+        }
+    </script>
+</body>
+</html>
